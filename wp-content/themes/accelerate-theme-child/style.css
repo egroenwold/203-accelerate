@@ -24,3 +24,28 @@ Text Domain:  accelerate-theme-child
 .button {
     background: #45ac9d;
 }
+
+/* Recent post on homepage */
+
+.blog-post {
+	width: 50%;
+	float: left;
+	margin-bottom: 2em;
+}
+
+.blog-post h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #d5d5d5;
+    text-transform: uppercase;
+    margin: 2em 0 .5em;
+}
+
+.blog-post h3 {
+	font-size: 1.5em;
+}
+
+.blog-post a {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #45ac9d;
+    text-transform: uppercase;
+}
