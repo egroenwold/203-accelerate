@@ -11,6 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="site-content sidebar">
 		<div class="main-content" role="main">
+		<div class="case-study-wrapper">
 			<?php while ( have_posts() ) : the_post(); 
 				$services = get_field('services');
 				$client = get_field('client');
@@ -51,14 +52,14 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 		
-		
+		</div>
 		</div><!-- .main-content -->
 
 
 	</div><!-- #primary -->
 
 	<nav id="navigation" class="container">
-		<div class="left"><a href="<?php echo site_url('/case-studies/') ?>">&larr; <span>Back to Work</span></a></div>
+		<div class="left"><a href="<?php echo site_url('/archives/case-studies/') ?>">&larr; <span>Back to Work</span></a></div>
 	</nav>
 
 <?php get_footer(); ?>

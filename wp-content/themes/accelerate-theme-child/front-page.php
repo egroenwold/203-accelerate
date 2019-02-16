@@ -55,8 +55,9 @@ get_header(); ?>
 	
 
 	<!-- Recent Posts -->
+	<div class="site-content homepage-recent-wrapper">
 	<section class="recent-posts">
- 		<div class="site-content">
+ 		<!-- div class="site-content" -->
 			<div class="blog-post">
 				<h4>From the Blog</h4>
 				<?php query_posts('posts_per_page=1'); ?>
@@ -66,7 +67,13 @@ get_header(); ?>
   					<?php endwhile; ?> 
 				<?php wp_reset_query(); ?>
 			</div>
-		</div>
+		<!-- /div -->
 	</section>
+
+	<section class="recent-tweets">
+		<h4>recent tweets</h4>
+	</section>
+
+	</div>
 
 <?php get_footer(); ?>
