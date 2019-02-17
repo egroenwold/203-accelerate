@@ -305,6 +305,19 @@ div.case-study-images img {
     font-size: 1.47em;
 }
 
+/* 404 page */
+
+.content-wrapper-404 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.content-wrapper-404 a {
+    color: #45ac9d;
+    font-weight: 700;
+}
+
 /* MEDIA QUERIES */
 /* Tablet Styles */
 
