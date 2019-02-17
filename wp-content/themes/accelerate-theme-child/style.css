@@ -98,8 +98,8 @@ Text Domain:  accelerate-theme-child
 }
 
 .blog-post {
-	width: 50%;
-    margin-bottom: 2em;
+	max-width: 450px;
+    margin: 0 4em 2em 0;
 }
 
 .blog-post h4 {
@@ -120,8 +120,26 @@ Text Domain:  accelerate-theme-child
 }
 
 .recent-tweets {
-    width: 50%;
+    max-width: 410px;
 }
+
+.recent-tweets h3 {
+    font-size: 1.5em;
+}
+
+.recent-tweets h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #d5d5d5;
+    text-transform: uppercase;
+    margin: 2em 0 .5em;
+}
+
+.recent-tweets .read-more-link a {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #45ac9d;
+    text-transform: uppercase;
+}
+
 
 /* CASE STUDY STYLES */
 /* CASE STUDY ARCHIVE PAGE*/
@@ -280,8 +298,6 @@ div.case-study-images img {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
 .about-single-service img {
     width: 100%;
 }
@@ -313,15 +329,59 @@ div.case-study-images img {
     flex-flow: row wrap;
 }
 
+.content-wrapper-404 figure {
+    width: 90%;
+}
+
+.content-wrapper-404 h2 {
+    font-family: 'Luckiest Guy', 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+
 .content-wrapper-404 a {
     color: #45ac9d;
     font-weight: 700;
+}
+
+/* Newsletter sign up form */
+
+.mc4wp-form-fields label {
+    font: 600 .875em/1.5 'Open Sans', Arial, sans-serif;
+	color: #3b3b3b;
+	margin-bottom: 1em;
+}
+
+.mc4wp-form-fields input {
+    width: 100%;
+}
+
+.mc4wp-form-fields .button {
+    background-color: #45ac9d;
+    padding: 10px 0;
 }
 
 /* MEDIA QUERIES */
 /* Tablet Styles */
 
 @media (max-width: 768px) {
+
+    /* Header */ 
+
+    #menu-top-nav {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #menu-top-nav li {
+        display: block;
+        text-align: center;
+        padding: 5px 5px;
+    }
+    
 
     /* Footer */
     .social-media-menu {
@@ -359,7 +419,7 @@ div.case-study-images img {
     }
     
     .recent-tweets {
-        width: 100%;
+        max-width: 90%;
     }
 
     /* Case Studies */

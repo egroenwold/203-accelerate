@@ -71,7 +71,14 @@ get_header(); ?>
 	</section>
 
 	<section class="recent-tweets">
-		<h4>recent tweets</h4>
+		<h4>Recent Tweet</h4>
+		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			<div id="secondary" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				<p class="read-more-link"><a href="http://twitter.com/lillyelen">Follow us > </a></p>
+			</div>
+
+		<?php endif; ?>
 	</section>
 
 	</div>
