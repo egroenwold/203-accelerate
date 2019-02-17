@@ -395,6 +395,10 @@ div.case-study-images img {
         align-items: center;
         flex-flow: row wrap;
     }
+
+    .about-footer h2 {
+        text-align: center;
+    }
 }
 
 /* Mobile Styles */
@@ -418,10 +422,6 @@ div.case-study-images img {
     .about-single-service .two-third-width,
     .about-single-service .third-width {
         margin: 20px 0;
-        width: 100%;
-    }
-
-    .third-width {
-        width: 200px;
+        width: 80%;
     }
 }
