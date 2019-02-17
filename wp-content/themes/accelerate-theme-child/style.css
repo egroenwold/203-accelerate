@@ -219,9 +219,109 @@ div.case-study-images img {
     resize: none;
 }
 
-/* Media Queries */
+/* ABOUT PAGE */
+
+.about-page {
+    height: auto;
+    margin: 0 0 3em;
+    padding: 4em 0;
+	text-align: center;
+}
+
+.about-page-hero {
+    display: flex;
+    justify-content: center;
+}
+
+.about-page-hero h3 {
+    width: 70%;
+    font-weight: 600px;
+    font-size: 1.47em;
+    margin: 0;
+}
+
+
+.about-page-services h4 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #3a3939;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.about-page-services .center-p {
+    font: 400 1em/1.75 'Open Sans', Arial, sans-serif;
+    color: #3b3b3b;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.about-single-service {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.third-width {
+    width: 25%;
+}
+
+.two-third-width {
+    width: 60%;
+}
+
+.about-single-service h2 {
+    margin: 10px 0 25px 0;
+    font-size: 1.47em;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.about-single-service img {
+    width: 100%;
+}
+
+.about-footer {
+        border-top: 1px solid #bfbfbf;
+        padding-top: 3em;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.about-footer h2,
+.about-footer a {
+    display: block;
+    margin: 10px 30px;
+}
+
+.about-footer h2 {
+    font-size: 1.47em;
+}
+
+/* MEDIA QUERIES */
+/* Tablet Styles */
+
 @media (max-width: 768px) {
 
+    /* Footer */
+    .social-media-menu {
+        text-align: left;
+        margin: 30px 0;
+    }
+
+    .social-media-menu li {
+        margin-right: 5px;
+    }
+
+    /* Homepage */
+    
     .featured-work ul {
         display: flex;
         justify-content: center;
@@ -248,6 +348,8 @@ div.case-study-images img {
     .recent-tweets {
         width: 100%;
     }
+
+    /* Case Studies */
 
     .case-study-wrapper {
         display: flex;
@@ -278,12 +380,48 @@ div.case-study-images img {
         padding: 10px;
     }
 
-    .social-media-menu {
-        text-align: left;
-        margin: 30px 0;
+    /* About Page */
+
+    .third-width {
+        width: 35%;
     }
 
-    .social-media-menu li {
-        margin-right: 5px;
+    .about-footer {
+        border-top: 1px solid #bfbfbf;
+        padding-top: 3em;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+}
+
+/* Mobile Styles */
+
+@media (max-width: 400px) {
+
+    /* About Page */
+
+    .about-page-services {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .about-single-service {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .about-single-service .two-third-width,
+    .about-single-service .third-width {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .third-width {
+        width: 200px;
     }
 }
