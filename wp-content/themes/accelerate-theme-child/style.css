@@ -16,6 +16,29 @@ Text Domain:  accelerate-theme-child
     background: none repeat scroll 0 0 #45ac9d;
   }
 
+/* FOOTER STYLES */
+
+.social-media-menu {
+    list-style: none;
+    text-align: right;
+}
+
+.social-media-menu li {
+    display: inline-block;
+    background-color: #3b3b3b;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+.social-media-menu li i {
+    color: #ffffff;
+}
+
+
 /* HOMEPAGE STYLES */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
@@ -76,7 +99,6 @@ Text Domain:  accelerate-theme-child
 
 .blog-post {
 	width: 50%;
-	/*float: left;*/
     margin-bottom: 2em;
 }
 
@@ -168,26 +190,33 @@ div.case-study-images img {
     margin-bottom: 50px;
 }
 
-/* FOOTER */
+/* CONTACT PAGE */
 
-.social-media-menu {
-    list-style: none;
-    text-align: right;
+
+#nf-label-field-1,
+#nf-label-field-2,
+#nf-label-field-3 {
+    font-weight: 600;
+    font-size: 0.875em;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.social-media-menu li {
-    display: inline-block;
-    background-color: #3b3b3b;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: 5px;
-    text-align: center;
-
+#nf-field-4 {
+    float: right;
+    background-color: #45ac9d;
 }
 
-.social-media-menu li i {
-    color: #ffffff;
+.nf-form-fields-required {
+    display: none;
+  }
+
+.ninja-forms-req-symbol {
+    display: none;
+  }
+
+#nf-field-3-wrap .ninja-forms-field {
+    height: 175px;
+    resize: none;
 }
 
 /* Media Queries */
