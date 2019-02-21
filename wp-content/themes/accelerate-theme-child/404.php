@@ -13,7 +13,7 @@ get_header(); ?>
 		<div class="main-content" role="main">
 			<div class="content-wrapper-404">
 				<figure>
-					<img src="http://localhost:8888/accelerate/wp-content/uploads/2019/02/error-page.jpg" alt="404 error" />
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/error-page.png" alt="404 error page"/>
 				</figure>
 				<h2>Whoops!</h2>
 				<p>Sorry, this page no longer exists, never existed or has been moved. We feel like complete jerks for totally misleading you. </p>
